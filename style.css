@@ -1,0 +1,157 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #000;
+  --card-bg: #fff;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+  --laps-bg: #eee;
+  --icon-color: #007bff;
+  --highlight-fastest: #f44336;
+  --highlight-slowest: #2196f3;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --button-bg: #4caf50;
+  --button-hover: #388e3c;
+  --laps-bg: #2c2c2c;
+  --icon-color: #4caf50;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.stopwatch-card {
+  background: var(--card-bg);
+  border-radius: 30px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+.stopwatch-icon {
+  width: 60px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition: fill 0.3s ease;
+}
+
+.milestone {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-family: Impact, sans-serif;
+}
+
+.flip-display {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 36px;
+}
+
+.flip-digit {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  margin: 0 3px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.flip-digit span {
+  display: block;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+  background-color: var(--button-hover);
+}
+
+table {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 6px;
+  text-align: center;
+}
+
+/* Color classes for each lap */
+.lap-color-0 { color: #e91e63; }
+.lap-color-1 { color: #9c27b0; }
+.lap-color-2 { color: #3f51b5; }
+.lap-color-3 { color: #2196f3; }
+.lap-color-4 { color: #009688; }
+.lap-color-5 { color: #4caf50; }
+.lap-color-6 { color: #ffc107; }
+.lap-color-7 { color: #ff5722; }
+
+thead {
+  background: var(--card-bg);
+}
+
+tbody {
+  display: block;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+thead tr, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
