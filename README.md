@@ -20,4 +20,6 @@ A modern, responsive stopwatch app built using HTML, CSS, and JavaScript. Featur
 
 ## 📸 Screenshots
 
-> *You can upload images of the stopwatch interface and insert them here.*
+> 
+![Screenshot 2025-06-23 225239](https://github.com/user-attachments/assets/00d12772-76ae-42f5-821d-b50f15a93adf)
+![Screenshot 2025-06-23 225254](https://github.com/user-attachments/assets/24afef12-5aec-434f-af2e-ee36addd6e66)
