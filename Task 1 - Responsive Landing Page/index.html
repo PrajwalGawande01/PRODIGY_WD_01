@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MySite - Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader"><div class="loader"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">MySite</div>
+    <div class="nav-links">
+      <a href="#home" class="nav-item active">Home</a>
+      <a href="#features" class="nav-item">Features</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to MySite</h1>
+      <p>Your one-stop destination for modern, responsive web solutions.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>Our Amazing Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>⚡ Fast Performance</h3>
+        <p>Optimized speed and smooth UX on all screens.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎨 Clean UI</h3>
+        <p>Beautiful, functional layouts and transitions.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔒 Secure Code</h3>
+        <p>Security-first development & design practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80" alt="Team working">
+      <p>We are developers & designers passionate about building fast, accessible, and modern websites. Whether you're launching a new brand or upgrading your site, we deliver tailored digital experiences.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formspree.io/f/yourID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
